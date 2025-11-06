@@ -67,10 +67,15 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_646A06BC96A148179245C12B54BA45E8 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D8D586E9AA5940ADBDDEE51FC0E5377F }}
 
+      - name: Wait for app service to stabilize
+        run: sleep 20
+
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
           app-name: 'stockmarket'
           slot-name: 'Production'
+
           
