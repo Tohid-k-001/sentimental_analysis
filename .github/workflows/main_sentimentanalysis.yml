@@ -48,7 +48,12 @@ jobs:
           app-name: 'sentimentanalysis'   # ✅ your actual Azure app name
           slot-name: 'Production'
 
-      # ✅ 7️⃣ (Optional) Verify deployment
+      # 7️⃣ Restart the Azure Web App to ensure it runs after deploy
+      - name: Restart Azure Web App
+        run: |
+          az webapp restart --name sentimentanalysis --resource-group sentimentanalysis_group
+
+      # ✅ 8️⃣ Verify deployment
       - name: Verify deployment
         run: |
           echo "Checking app availability..."
