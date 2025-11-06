@@ -1,3 +1,4 @@
+streamlit
 numpy
 pandas
 scikit-learn
@@ -6,8 +7,6 @@ matplotlib
 seaborn
 wordcloud
 joblib
-streamlit
-PyPDF2
 openpyxl
 plotly
-fpdf
+PyPDF2
