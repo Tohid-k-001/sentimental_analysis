@@ -9,7 +9,7 @@ import PyPDF2
 import pandas as pd
 import re
 import openpyxl
-import plotly.graph_objects as go
+import plotly.graph_objects as go 
 
 # ---- Page Config ----
 st.set_page_config(page_title="Sentiment Analyzer", page_icon="💬", layout="wide")
