@@ -7,3 +7,6 @@ seaborn
 wordcloud
 joblib
 streamlit
+PyPDF2
+openpyxl
+plotly
