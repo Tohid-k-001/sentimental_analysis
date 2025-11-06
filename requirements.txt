@@ -10,3 +10,4 @@ streamlit
 PyPDF2
 openpyxl
 plotly
+fpdf
